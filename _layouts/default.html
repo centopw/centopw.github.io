@@ -1,63 +1,51 @@
----
-layout: compress
-# Default layout
-# v2.0
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2017-2019 Cotes Chung
-# MIT Licensed
----
-
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-{% if site.lang %}
-  {% assign lang = site.lang | split: "_" | first %}
-{% else %}
-  {% assign lang = 'en' %}
-{% endif %}
+    {% include meta.html %}
 
-{% capture prefer_mode %}
-  {% if site.theme_mode != "dual" %}
-    mode="{{ site.theme_mode }}"
-  {% endif %}
-{% endcapture %}
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<html lang="{{ lang }}" {{ prefer_mode }} >
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-  {% include head.html %}
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
 
-  <body data-spy="scroll" data-target="#toc">
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-    <div id="sidebar" class="d-flex flex-column">
-      {% include sidebar.html %}
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+          </nav>
+        </header>
+      </div>
     </div>
 
-    {% include topbar.html %}
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
 
-    <div id="main-wrapper">
-      <div id="main">
-
-        {% include fixlinenos.html content=content %}
-
-        {% include footer.html %}
-
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
       </div>
+    </div>
 
-      {% include search-results.html %}
-
-    </div> <!-- #main-wrapper -->
-
-    <div id="mask"></div>
-
-    <a id="back-to-top" href="#" class="btn btn-lg btn-box-shadow" role="button">
-      <i class="fas fa-angle-up"></i>
-    </a>
-
-    {% if jekyll.environment == 'production' %}
-      {% include google-analytics.html %}
-    {% endif %}
-
-    {% include search-loader.html %}
-
+    {% include analytics.html %}
   </body>
-
 </html>
