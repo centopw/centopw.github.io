@@ -14,4 +14,16 @@
 ⚡️ Valid HTML5 & CSS3
 
 ⚡️ Optimized with Webpack
-//TODO
+
+### How to use.
+
+Clone the project to local computer using git cli
+```
+git clone https://github.com/centopw/centopw.github.io.git
+```
+Then cd to project
+```
+cd ./centopw.github.io
+```
+
+Change what you want and upload to your github website and enjoy your all new portfolio!
