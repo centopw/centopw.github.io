@@ -1,3 +1,13 @@
+## Hey👋, I'm Hiep - aka [Cento][website] 
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/cento)
+[![Website Badge](https://img.shields.io/badge/Website-3b5998?style=flat-square&logo=google-chrome&logoColor=white)](https://tanhiep.dev/)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/centopw)
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/centopw/)
+[![Discord](https://img.shields.io/badge/%3CServer%3E-%237289DA.svg?&logo=discord&logoColor=white)](https://discord.gg/mBZP3P5xgJ)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:contact@tanhiep.dev)
+
+
+### Glad to see you here!
 # Animated portfolio ⚡️
 
 <h2 align="center">
